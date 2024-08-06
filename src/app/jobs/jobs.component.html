@@ -1,0 +1,11 @@
+<h1>Work History</h1>
+<div *ngFor="let job of jobs">
+  <mat-card>
+    <mat-card-title>{{ job.title }}</mat-card-title>
+    <mat-card-content>
+      <p>{{ job.description }}</p>
+      <p><strong>Duration:</strong> {{ job.duration }}</p>
+      <p><strong>Employer:</strong> {{ job.employer }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
